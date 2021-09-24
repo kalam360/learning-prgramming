@@ -3,24 +3,24 @@
 ## Web Fullstack development
 
 ```mermaid
-graph TD;
-    vite_app --> html_css_responsive_ui_tailwind
-    -->vuejs_frontend;
+graph TD
+    a[Vite App] --> b[HTML CSS - Responsive UI Tailwind]
+    -->c[Vue Frontend];
 
     postgresql/mongodb --> sql_alchemy/pymongo 
     --> alembic_migration --> Fastapi_pydantic/express_schema_backend;  
 
-    Fastapi_pydantic/express_schema_backend --> app_jwt_auth;
+    Fastapi_pydantic/express_schema_backend --> d[App - Axios-Jwt];
 
-    vuejs_frontend --> app_jwt_auth;
+    c[Vue Frontend] --> d[App - Axios-Jwt];
 
-    app_jwt_auth --> docker_kubernates_orchestration
+    d[App - Axios-Jwt] --> docker_kubernates_orchestration
     --> celeryworker_mher/flower --> rabbitmq/kafka 
     --> traefik_reverse_proxy;
 
-    d3/threejs/echarts-->vuejs_frontend;
+    d3/threejs/echarts-->c[Vue Frontend];
 
-    solidity_truffle_smartcontracts --> ethereumjs/web3js/geth --> vuejs_frontend;
+    e[Smartcontracts in Solidity with Truffle] --> f[Geth node with web3js] --> c[Vue Frontend];
 
 
 ```
@@ -35,3 +35,24 @@ graph TD;
     vscode --> Desktop_Application
 ```
 
+## Quantitative Finance
+
+```mermaid
+graph TD;
+    a[Stochastic Calculus] --> p((0)) --> d[Classical Machinelearning];
+     b[Model Financial Process] --> h[Bactrader Backtesting];
+
+    d[Classical Machinelearning] --> z((0))-->b[Model Financial Process];
+
+    b[Model Financial Process] --> j[Risk Management];
+
+    e[Econometrics -Timeseries] --> p((0)) --> g[Deep Learning];
+    g[Deep Learning] --> z((0));
+    b[Model Financial Process] --> f[RL Agent] -->  h[Bactrader Backtesting];
+    h[Bactrader Backtesting] --> c[Algorithmic Trading];
+    i[Linear Algebra and Vector Calculus] --> a[Stochastic Calculus] ;
+
+    
+
+
+```

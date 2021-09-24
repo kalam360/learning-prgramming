@@ -1,5 +1,27 @@
 # Learning any programming language
 
+## Sequence of Learning
+
+### Basics
+- [ ] Syntax
+- [ ] Data Structures
+- [ ] Algorithms
+- [ ] 250 leetcode problems
+- [ ] 250 codeforces problems
+
+### Build
+- [ ] Rest API
+- [ ] Console Application
+- [ ] Command Line Tool
+- [ ] GUI Application
+- [ ] Build and Host a Library/Package
+
+## Test Yourself
+
+- [ ] Language Specific Features
+- [ ] Language Faultlines
+- [ ] Interview Questions
+
 ## Check List
 
 - [ ] Data types
